@@ -2,17 +2,16 @@ package org.utl.introkotlin904.TemasKotlin
 
 
 fun generarPiramide(numRenglones: Int){
-    var filaActual = 1
+    var filaActual = 0
     do {
-        var asteriscosEnFila = 0
-        do {
-            print("*")
-            asteriscosEnFila++
-        } while (asteriscosEnFila < filaActual)
-
-        println()
         filaActual++
-    } while (filaActual <= numRenglones)
+        var filaAsterisco = 0
+        do {
+            filaAsterisco++
+            print("*")
+        }while (filaAsterisco < filaActual)
+        println("")
+    } while (filaActual < numRenglones)
 
 }
 

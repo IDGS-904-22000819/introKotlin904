@@ -15,10 +15,10 @@
 
         <!-- Principal (solo uno con LAUNCHER) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".tema1App.Ejemplo1Activity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.IntroKotlin904">
+            android:theme="@style/Theme.AppCompat.DayNight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,10 +26,6 @@
         </activity>
 
         <!-- Secundarias -->
-        <activity
-            android:name=".tema1App.Ejemplo1Activity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight" />
 
         <activity
             android:name=".tema1App.Ejemplo2Activity"

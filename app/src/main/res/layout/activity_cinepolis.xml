@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00a2e8"
+    tools:context=".tema1App.Cinepolis">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:src="@drawable/logo" />
+
+        <!-- Fila Nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nombreText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nombreEditText"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="Escribe aqui"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Fila Cantidad de compradores -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/compradoresText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad de compradores"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/compradoresEditText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Fila Tarjeta cineco -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tarjetaText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarjeta cineco"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_si"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Fila Cantidad de Boletos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/boletosText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad de Boletos"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/boletosEditText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Sección Boletos a Pagar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boletos a Pagar"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textresultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="$ xxx.xx"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Botón Calcular -->
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="calcular"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/textmensaje"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/red_custom"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

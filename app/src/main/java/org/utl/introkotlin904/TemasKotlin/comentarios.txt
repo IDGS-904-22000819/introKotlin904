@@ -1,0 +1,44 @@
+// List (Inmutable - Solo lectura)
+
+val readOnlyFiguras = listOf("Cuadrado", "Triangulo", "Circulo")
+// Características:
+// - No se pueden agregar/quitar elementos después de crearla
+// USO: Cuando tienes una lista fija que no cambiará
+
+// MutableList (Mutable - Puede modificarse)
+var figura = mutableListOf("Cuadrado", "Triangulo", "Circulo")
+// Características:
+// - Permite agregar (add), quitar (remove) y modificar elementos
+// - Necesaria cuando la lista debe cambiar dinámicamente
+// USO: Cuando necesitas modificar la lista después de crearla
+
+// Set (Inmutable - Solo lectura)
+val frutas = setOf("Manzana", "Banana", "Naranja")
+// Características:
+// - No permite elementos duplicados
+// - No mantiene orden específico
+// - No se puede modificar después de crearlo
+// USO: Cuando necesitas una colección de elementos únicos que no cambiará
+
+// MutableSet (Mutable - Puede modificarse)
+val frutasMutable = mutableSetOf("Manzana", "Banana", "Naranja")
+// Características:
+// - Permite agregar y quitar elementos
+// - Sigue sin permitir duplicados
+// USO: Cuando necesitas un conjunto de elementos únicos que puede cambiar
+
+
+// Map (Inmutable - Solo lectura)
+val coches = mapOf("uno" to 1, "dos" to 2, "tres" to 3)
+// Características:
+// - Almacena pares clave-valor
+// - No se puede modificar después de crearlo
+// - Acceso rápido a valores por clave
+// USO: Cuando tienes un diccionario fijo de pares clave-valor
+
+// MutableMap (Mutable - Puede modificarse)
+val cochesMutable = mutableMapOf("uno" to 1, "dos" to 2, "tres" to 3)
+// Características:
+// - Permite agregar, modificar y quitar pares clave-valor
+// - Acceso rápido a valores por clave
+// USO: Cuando necesitas un diccionario que puede cambiar dinámicamente

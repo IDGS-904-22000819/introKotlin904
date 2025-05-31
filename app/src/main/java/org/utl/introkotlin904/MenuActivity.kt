@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import org.utl.introkotlin904.Diccionario.BuscarPalabra
+import org.utl.introkotlin904.Diccionario.MenuDiccionario
 import org.utl.introkotlin904.PracticaPalindromo.palindromoActivity
 import org.utl.introkotlin904.Tema3.Ejemplo4Activity
 import org.utl.introkotlin904.Tema4.Ejemplo5Activity
@@ -27,6 +29,7 @@ class MenuActivity : AppCompatActivity() {
         val btn5 = findViewById<Button>(R.id.btn5)
         val btn6 = findViewById<Button>(R.id.btn6)
         val btn7 = findViewById<Button>(R.id.btn7)
+        val btn8 = findViewById<Button>(R.id.btn8)
 
 
         btn1.setOnClickListener {
@@ -54,6 +57,10 @@ class MenuActivity : AppCompatActivity() {
 
         btn7.setOnClickListener {
             navegateToPalindromo()
+        }
+
+        btn8.setOnClickListener {
+            navegateToDiccionario()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -95,6 +102,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navegateToPalindromo() {
         val intent = Intent(this, palindromoActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navegateToDiccionario() {
+        val intent = Intent(this, MenuDiccionario::class.java)
         startActivity(intent)
     }
 

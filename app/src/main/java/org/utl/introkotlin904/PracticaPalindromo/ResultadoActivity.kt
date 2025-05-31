@@ -10,12 +10,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import org.utl.introkotlin904.MenuActivity
 import org.utl.introkotlin904.R
-import org.utl.introkotlin904.tema1App.Ejemplo1Activity
 
 class ResultadoActivity : AppCompatActivity() {
 
     val vocales = listOf('a', 'e', 'i', 'o', 'u')
-
     val consonantes = listOf(
         'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
         'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'
